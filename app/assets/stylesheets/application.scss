@@ -1,3 +1,6 @@
+// Entry point for your Sass build
+@use "govuk-frontend/govuk/all";
+
 @function frontend-font-url($filename) {
   @return url("~assets/fonts/" + $filename);
 }
@@ -6,11 +9,9 @@
   @return url("~assets/images/" + $filename);
 }
 
-$govuk-font-url-function: frontend-font-url;
-$govuk-image-url-function: frontend-image-url;
-$govuk-global-styles: true;
-
-@import "~govuk-frontend/govuk/all";
+all.$govuk-font-url-function: frontend-font-url;
+all.$govuk-image-url-function: frontend-image-url;
+all.$govuk-global-styles: true;
 
 @import "accessible-autocomplete";
 @import "input";
@@ -21,5 +22,5 @@ $govuk-global-styles: true;
 
 // Overrides
 .app-\!-colour-muted {
-  color: $govuk-secondary-text-colour !important;
+  color: all.$govuk-secondary-text-colour !important;
 }

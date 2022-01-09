@@ -1,23 +1,23 @@
 .app-related-navigation {
-  @include govuk-text-colour;
+  @include all.govuk-text-colour;
   border-top: 2px solid govuk-colour("blue");
 }
 
 .app-related-navigation__main-heading {
-  @include govuk-font(19, $weight: bold);
+  @include all.govuk-font(19, $weight: bold);
   margin-top: govuk-spacing(3);
   margin-bottom: govuk-spacing(2);
 }
 
 .app-related-navigation__sub-heading {
-  @include govuk-font(16);
-  border-top: 1px solid govuk-colour("mid-grey", $legacy: "grey-2");
+  @include all.govuk-font(16);
+  border-top: 1px solid all.govuk-colour("mid-grey", $legacy: "grey-2");
   margin: 0;
   padding-top: govuk-spacing(3);
 }
 
 .app-related-navigation__sub-heading--footer {
-  @include govuk-font(19, $weight: bold);
+  @include all.govuk-font(19, $weight: bold);
   border-top: 0;
   padding-top: 0;
   margin-top: govuk-spacing(3);
@@ -41,11 +41,11 @@
 }
 
 .app-related-navigation__link {
-  @include govuk-font($size: 16, $weight: regular, $line-height: 1.45);
+  @include all.govuk-font($size: 16, $weight: regular, $line-height: 1.45);
   list-style-type: none;
   margin-top: govuk-spacing(3);
 
-  @include govuk-media-query($from: tablet) {
+  @include all.govuk-media-query($from: tablet) {
     line-height: 1.28;
   }
 }
