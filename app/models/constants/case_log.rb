@@ -34,27 +34,57 @@ module Constants::CaseLog
     "Prefer not to say" => 10,
   }.freeze
 
-  ETHNIC = {
-    "White: English, Welsh, Scottish, Northern Irish or British" => 1,
-    "White: Irish" => 2,
-    "White: Gypsy or Irish Traveller" => 18,
-    "White: Other" => 3,
-    "Mixed: White and Black Caribbean" => 4,
-    "Mixed: White and Black African" => 5,
-    "Mixed: White and Asian" => 6,
-    "Mixed: Other" => 7,
-    "Asian or Asian British: Indian" => 8,
-    "Asian or Asian British: Pakistani" => 9,
-    "Asian or Asian British: Bangladeshi" => 10,
-    "Asian or Asian British: Chinese" => 15,
-    "Asian or Asian British: Other" => 11,
-    "Black: Caribbean" => 12,
-    "Black: African" => 13,
-    "Black: Other" => 14,
-    "Other Ethnic Group: Arab" => 16,
-    "Other Ethnic Group: Other" => 19,
-    "Prefer not to say" => 17,
+  ETHNIC_GROUP = {
+    "White" => 1,
+    "Mixed or Multiple ethnic groups" => 2,
+    "Asian or Asian British" => 3,
+    "Black, African, Caribbean or Black British" => 4,
+    "Other ethnic group" => 5,
+    "Tenant prefers not to say" => 0,
   }.freeze
+
+  ETHNIC = {
+    "English, Scottish, Welsh, Northern Irish, British" => 1,
+    "Irish" => 2,
+    "Gypsy, Irish Traveller" => 18,
+    "Indian" => 8,
+    "Pakistani " => 9,
+    "Bangladeshi" => 10,
+    "Chinese" => 15,
+    "Other" => 11,
+    "Arab" => 19,
+    "Other ethnic group" => 16,
+    "White and Black Caribbean" => 4,
+    "White and Black African" => 5,
+    "White and Asian" => 6,
+    "Other" => 7,
+    "Caribbean" => 12,
+    "African" => 13,
+    # "black Other" => 14,
+    "Refused" => 17
+  }.freeze
+
+  # ETHNIC = {
+  #   "White: English, Welsh, Scottish, Northern Irish or British" => 1,
+  #   "White: Irish" => 2,
+  #   "White: Gypsy or Irish Traveller" => 18,
+  #   "White: Other" => 3,
+  #   "Mixed: White and Black Caribbean" => 4,
+  #   "Mixed: White and Black African" => 5,
+  #   "Mixed: White and Asian" => 6,
+  #   "Mixed: Other" => 7,
+  #   "Asian or Asian British: Indian" => 8,
+  #   "Asian or Asian British: Pakistani" => 9,
+  #   "Asian or Asian British: Bangladeshi" => 10,
+  #   "Asian or Asian British: Chinese" => 15,
+  #   "Asian or Asian British: Other" => 11,
+  #   "Black: Caribbean" => 12,
+  #   "Black: African" => 13,
+  #   "Black: Other" => 14,
+  #   "Other Ethnic Group: Arab" => 16,
+  #   "Other Ethnic Group: Other" => 19,
+  #   "Prefer not to say" => 17,
+  # }.freeze
 
   HOMELESS = {
     "Assessed as homeless (or threatened with homelessness within 56 days) by a local authority and owed a homelessness duty" => 11,
@@ -77,23 +107,23 @@ module Constants::CaseLog
 
   NATIONAL = {
     "UK national resident in UK" => 1,
-    "A current or former reserve in the UK Armed Forces (excluding National Service)" => 100,
+    # "A current or former reserve in the UK Armed Forces (excluding National Service)" => 100,
     "UK national returning from residence overseas" => 2,
-    "Czech Republic" => 3,
-    "Estonia" => 4,
-    "Hungary" => 5,
-    "Latvia" => 6,
-    "Lithuania" => 7,
-    "Poland" => 8,
-    "Slovakia" => 9,
-    "Bulgaria" => 14,
-    "Romania" => 15,
-    "Ireland" => 17,
-    "Slovenia" => 10,
-    "Croatia" => 16,
-    "Other EU Economic Area (EEA country)" => 11,
-    "Any other country" => 12,
-    "Prefer not to say" => 13,
+    "Czech" => 3,
+    "Estonian" => 4,
+    "Hungarian" => 5,
+    "Latvian" => 6,
+    "Lithuanian" => 7,
+    "Polish" => 8,
+    "Slovakian" => 9,
+    "Slovenian" => 10,
+    "Bulgarian" => 14,
+    "Romanian" => 15,
+    "Croatian" => 16,
+    "Irish" => 17,
+    "From another European Economic Area (EEA) country" => 11,
+    "From any other country" => 12,
+    "Tenant prefers not to say" => 13,
   }.freeze
 
   PREGNANCY = {
@@ -1057,7 +1087,7 @@ module Constants::CaseLog
                      "Westminster"].freeze
 
   RELAT = {
-    "Child - includes young adult and grown-up" => "C",
+    "Child" => "C",
     "Partner" => "P",
     "Other" => "X",
     "Prefer not to say" => "R",
