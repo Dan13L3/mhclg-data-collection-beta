@@ -20,6 +20,7 @@ module TasklistHelper
   end
 
   def get_subsections_count(case_log, status = :all)
+    puts status
     return case_log.form.subsections.count if status == :all
 
     case_log.form.subsections.count { |subsection| subsection.status(case_log) == status }

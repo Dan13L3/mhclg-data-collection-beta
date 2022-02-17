@@ -633,8 +633,7 @@
                 }
               },
               "depends_on": {
-                "other_hhmemb": ">0",
-                "details_known_2": ["Yes"]
+                "other_hhmemb": ">0"
               }
             },
             
@@ -666,7 +665,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">0",
-                "details_known_2": ["Yes"]
+                "details_known_2": "Yes"
               }
             },
             "person_2_age": {
@@ -1177,7 +1176,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">3",
-                "details_known_": "Yes"
+                "details_known_5": "Yes"
               }
             },
             "person_5_economic_status": {
@@ -1228,7 +1227,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">3",
-                "details_known_": "Yes"
+                "details_known_5": "Yes"
               }
             },
             "person_6_info": {
@@ -1330,7 +1329,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">4",
-                "details_known_": "Yes"
+                "details_known_6": "Yes"
               }
             },
             "person_6_economic_status": {
@@ -1381,7 +1380,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">4",
-                "details_known_": "Yes"
+                "details_known_6": "Yes"
               }
             },
             "person_7_info": {
@@ -1453,7 +1452,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">5",
-                "details_known_6": "Yes"
+                "details_known_7": "Yes"
               }
             },
             "person_7_sex": {
@@ -1483,7 +1482,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">5",
-                "details_known_": "Yes"
+                "details_known_7": "Yes"
               }
             },
             "person_7_economic_status": {
@@ -1534,7 +1533,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">5",
-                "details_known_": "Yes"
+                "details_known_7": "Yes"
               }
             },
             "person_8_info": {
@@ -1636,7 +1635,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">6",
-                "details_known_": "Yes"
+                "details_known_8": "Yes"
               }
             },
             "person_8_economic_status": {
@@ -1687,7 +1686,7 @@
               },
               "depends_on": {
                 "other_hhmemb": ">6",
-                "details_known_": "Yes"
+                "details_known_8": "Yes"
               }
             }
           }

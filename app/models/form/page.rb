@@ -45,6 +45,7 @@ private
   end
 
   def send_chain(arr, case_log)
+    puts arr
     Array(arr).inject(case_log) { |o, a| o.public_send(*a) }
   end
 
