@@ -311,7 +311,7 @@
               "header": "",
               "description": "",
               "questions": {
-                "tenant_ethnic_group_asian_detail": {
+                "ethnic": {
                   "check_answer_label": "Ethnicity",
                   "header": "Which of the following best describes the lead tenant’s Asian or Asian British background?",
                   "hint_text": "The lead tenant is the person in the household who does the most paid work. If several people do the same paid work, the lead tenant is whoever is the oldest.",
@@ -330,16 +330,16 @@
                       "value": "Chinese"
                     },
                     "4": {
-                      "value": "Any other Asian background"
+                      "value": "Other ethnic group"
                     }
                   },
                   "conditional_for": {
-                    "tenant_ethnic_group_asian_other": [
-                      "Any other Asian background"
+                    "ethnic_other": [
+                      "Other ethnic group"
                     ]
                   }
                 },
-                "tenant_ethnic_group_asian_other": {
+                "ethnic_other": {
                   "header": "How would the lead tenant describe their background? (optional)",
                   "hint_text": "The lead tenant is the person in the household who does the most paid work. If several people do the same paid work, the lead tenant is whoever is the oldest.",
                   "type": "text"
@@ -632,9 +632,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">0"
-              }
+              }]
             },
             
             "person_2_relationship": {
@@ -663,10 +663,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">0",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_2_age": {
               "header": "",
@@ -682,10 +682,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">0",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_2_sex": {
               "header": "",
@@ -712,10 +712,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">0",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_2_economic_status": {
               "header": "",
@@ -763,10 +763,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">0",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_3_info": {
               "header": "You’ve given us the details for 2 of {total} people in the household",
@@ -786,9 +786,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">1"
-              }
+              }]
             },
             
             "person_3_relationship": {
@@ -817,10 +817,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">1",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_3_age": {
               "header": "",
@@ -836,10 +836,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">1",
                 "details_known_3": "Yes"
-              }
+              }]
             },
             "person_3_sex": {
               "header": "",
@@ -866,10 +866,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">1",
                 "details_known_3": "Yes"
-              }
+              }]
             },
             "person_3_economic_status": {
               "header": "",
@@ -917,10 +917,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">1",
                 "details_known_2": "Yes"
-              }
+              }]
             },
             "person_4_info": {
               "header": "You’ve given us the details for 3 of {total} people in the household",
@@ -940,9 +940,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">2"
-              }
+              }]
             },
             
             "person_4_relationship": {
@@ -971,10 +971,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">2",
                 "details_known_4": "Yes"
-              }
+              }]
             },
             "person_4_age": {
               "header": "",
@@ -990,10 +990,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">2",
                 "details_known_3": "Yes"
-              }
+              }]
             },
             "person_4_sex": {
               "header": "",
@@ -1020,10 +1020,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">2",
                 "details_known_4": "Yes"
-              }
+              }]
             },
             "person_4_economic_status": {
               "header": "",
@@ -1071,10 +1071,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">2",
                 "details_known_4": "Yes"
-              }
+              }]
             },
             "person_5_info": {
               "header": "You’ve given us the details for 4 of {total} people in the household",
@@ -1094,9 +1094,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">3"
-              }
+              }]
             },
             
             "person_5_relationship": {
@@ -1125,10 +1125,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">3",
                 "details_known_5": "Yes"
-              }
+              }]
             },
             "person_5_age": {
               "header": "",
@@ -1144,10 +1144,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">3",
                 "details_known_5": "Yes"
-              }
+              }]
             },
             "person_5_sex": {
               "header": "",
@@ -1174,10 +1174,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">3",
                 "details_known_5": "Yes"
-              }
+              }]
             },
             "person_5_economic_status": {
               "header": "",
@@ -1225,10 +1225,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">3",
                 "details_known_5": "Yes"
-              }
+              }]
             },
             "person_6_info": {
               "header": "You’ve given us the details for 5 of {total} people in the household",
@@ -1248,9 +1248,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">4"
-              }
+              }]
             },
             "person_6_relationship": {
               "header": "",
@@ -1278,10 +1278,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">4",
                 "details_known_6": "Yes"
-              }
+              }]
             },
             "person_6_age": {
               "header": "",
@@ -1297,10 +1297,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">4",
                 "details_known_6": "Yes"
-              }
+              }]
             },
             "person_6_sex": {
               "header": "",
@@ -1327,10 +1327,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">4",
                 "details_known_6": "Yes"
-              }
+              }]
             },
             "person_6_economic_status": {
               "header": "",
@@ -1378,10 +1378,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">4",
                 "details_known_6": "Yes"
-              }
+              }]
             },
             "person_7_info": {
               "header": "You’ve given us the details for 7 of {total} people in the household",
@@ -1401,9 +1401,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">5"
-              }
+              }]
             },
             "person_7_relationship": {
               "header": "",
@@ -1431,10 +1431,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">5",
                 "details_known_7": "Yes"
-              }
+              }]
             },
             "person_7_age": {
               "header": "",
@@ -1450,10 +1450,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">5",
                 "details_known_7": "Yes"
-              }
+              }]
             },
             "person_7_sex": {
               "header": "",
@@ -1480,10 +1480,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">5",
                 "details_known_7": "Yes"
-              }
+              }]
             },
             "person_7_economic_status": {
               "header": "",
@@ -1531,10 +1531,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">5",
                 "details_known_7": "Yes"
-              }
+              }]
             },
             "person_8_info": {
               "header": "You’ve given us the details for 7 of 8 people in the household",
@@ -1554,9 +1554,9 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">6"
-              }
+              }]
             },
             "person_8_relationship": {
               "header": "",
@@ -1584,10 +1584,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">6",
                 "details_known_8": "Yes"
-              }
+              }]
             },
             "person_8_age": {
               "header": "",
@@ -1603,10 +1603,10 @@
                   "width": 2
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">6",
                 "details_known_8": "Yes"
-              }
+              }]
             },
             "person_8_sex": {
               "header": "",
@@ -1633,10 +1633,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">6",
                 "details_known_8": "Yes"
-              }
+              }]
             },
             "person_8_economic_status": {
               "header": "",
@@ -1684,10 +1684,10 @@
                   }
                 }
               },
-              "depends_on": {
+              "depends_on": [{
                 "other_hhmemb": ">6",
                 "details_known_8": "Yes"
-              }
+              }]
             }
           }
         },
